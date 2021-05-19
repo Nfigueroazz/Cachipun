@@ -1,14 +1,22 @@
-/*alert("Bienvenido al juego del Cachipún")
-alert("Las reglas son: El juego es entre dos jugadores, tú y la maquina. Ambos elegirán una de tres opciones (Piedra = 0 ; Tijera = 1 o Papel = 2)")
-alert("Debes saber que: Tijera le gana a papel, Papel le gana a piedra, Piedra le gana a tijera. Si ambos jugadores eligen la misma opción es un empate")
-alert("Ahora vamos a jugar!")
+alert(`Bienvenido al juego del Cachipún`)
+alert(
+`El juego es entre dos jugadores, tú y la maquina. 
+Ambos elegirán una de tres opciones: 
+Piedra = 0 ; Tijera = 1 ; Papel = 2`
+)
+alert(
+`Debes saber que: Tijera le gana a Papel, 
+Papel le gana a Piedra y Piedra le gana a Tijera. 
+Si ambos jugadores eligen la misma opción es un empate.`)
+alert(`Ahora ¡vamos a jugar!`)
 
 let cantidadJuegos = parseInt(prompt("¿Cuántas veces desea jugar Cachipún?"));
 
 for (let i=1; i<=cantidadJuegos; i++){
 
     let maquina = Math.floor(Math.random()*3);
-    let jugador = parseInt(prompt("Elige una opción a jugar (Piedra = 0 ; Tijera = 1 o Papel = 2)"))
+    let jugador = parseInt(prompt(`Elige una opción a jugar 
+    (Piedra = 0 ; Tijera = 1 o Papel = 2)`))
 
     do {
         if (jugador < 0 || jugador > 2) {
@@ -49,72 +57,14 @@ for (let i=1; i<=cantidadJuegos; i++){
             }
         break;
     }
-}*/
-
-alert("Bienvenido al juego del Cachipún")
-alert("Las reglas son: El juego es entre dos jugadores, tú y la maquina. Ambos elegirán una de tres opciones (Piedra = 0 ; Tijera = 1 o Papel = 2)")
-alert("Debes saber que: Tijera le gana a papel, Papel le gana a piedra, Piedra le gana a tijera y si ambos jugadores eligen la misma opción es un empate")
-alert("Ahora vamos a jugar!")
-
-let cantidadJuegos = parseInt(prompt("¿Cuántas veces desea jugar Cachipún?"));
-
-for (let i=1; i<=cantidadJuegos; i++){
-
-    let maquina = Math.floor(Math.random()*3);
-    let jugador = parseInt(prompt("Elige una opción a jugar (Piedra = 0 ; Tijera = 1 o Papel = 2)"))
-
-    do {
-        if (jugador < 0 || jugador > 2) {
-            alert('[ERROR] El campo debe tener un valor entre cero y dos');
-            jugador = parseInt(prompt("Elige una opción a jugar (Piedra = 0 ; Tijera = 1 o Papel = 2)"));
-        }
-    } while (jugador < 0 || jugador > 2);          
-
-    while (maquina == 0)
-    switch (jugador){
-        case 0:
-                alert(`Has elegido Piedra y la Maquina ha elegido Piedra, ha sido empate.`)
-        break;
-        case 1:
-                alert(`Has elegido Tijera y la Maquina ha elegido Piedra, has sido derrotado.`)
-        break;
-        case 2:
-                alert(`Has elegido Papel y la Maquina ha elegido Piedra, has vencido.`)
-                alert(`FELICITACIONES`)
-        break;
-    }
-    while (maquina == 1)
-    switch (jugador){
-        case 0:
-                alert(`Has elegido Piedra y la Maquina ha elegido Tijera, has vencido.`)
-                alert(`FELICITACIONES`)
-        break;
-        case 1:
-                alert(`Has elegido Tijera y la Maquina ha elegido Tijera, ha sido empate.`)
-        break;
-        case 2:
-                alert(`Has elegido Papel y la Maquina ha elegido Tijera, has sido derrotado.`)
-        break;
-    }
-    while (maquina == 2)
-    switch (jugador){
-        case 0:
-                alert(`Has elegido Piedra y la Maquina ha elegido Papel, has sido derrotado.`)
-        break;
-        case 1:
-                alert(`Has elegido Tijera y la Maquina ha elegido Papel, has vencido.`)
-                alert(`FELICITACIONES`)
-        break;
-        case 2:
-                alert(`Has elegido Papel y la Maquina ha elegido Papel, ha sido empate.`)
-        break;
-    }
 }
 
-/*let continuar = prompt(parseInt("¿Desea continuar jugando? (y/n)"));
+let continuar = prompt(parseInt("¿Desea continuar jugando? (y/n)"));
+do{
     if (continuar === y){
         continuar = false
     }else (continuar === n);{
         continuar = true
     }
-}while (continuar === true)*/
+}while (continuar === true){
+*/
