@@ -59,7 +59,7 @@ for (let i=1; i<=cantidadJuegos; i++){
     }
 }
 
-let continuar = prompt(parseInt("¿Desea continuar jugando? (y/n)"));
+/*let continuar = prompt(parseInt("¿Desea continuar jugando? (y/n)"));
 do{
     if (continuar === y){
         continuar = false
